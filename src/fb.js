@@ -344,7 +344,7 @@ class Facebook {
 		uri = `https://graph.${this.options('beta') ? 'beta.' : ''}facebook.com/${path}`;
 
 		if (this.options('graphDomain')) {
-			url = 'https://' + this.options('graphDomain') + '/' + path;
+			uri = 'https://' + this.options('graphDomain') + '/' + path;
 		}
 
 		parsedUri = URL.parse(uri);
