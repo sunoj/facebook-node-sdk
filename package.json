@@ -1,6 +1,6 @@
 {
-  "name": "fb",
-  "version": "2.0.0",
+  "name": "fb-node-sdk",
+  "version": "2.0.1",
   "description": "NodeJS Library for Facebook",
   "keywords": [
     "facebook",
@@ -9,7 +9,8 @@
   ],
   "author": "Thuzi LLC <pshrestha@thuzi.com> (https://github.com/Thuzi)",
   "contributors": [
-    "Daniel Friesen <d@danf.ca> (http://danf.ca)"
+    "Daniel Friesen <d@danf.ca> (http://danf.ca)",
+    "Ming Sun <ming@duohui.co> (https://duohui.co)"
   ],
   "homepage": "https://github.com/node-facebook/facebook-node-sdk",
   "license": "Apache-2.0",

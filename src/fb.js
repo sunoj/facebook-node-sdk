@@ -29,6 +29,7 @@ var {version} = require('../package.json'),
 		timeout: null,
 		scope: null,
 		redirectUri: null,
+		graphDomain: null,
 		proxy: null,
 		userAgent: `thuzi_nodejssdk/${version}`
 	}),
@@ -339,7 +340,12 @@ class Facebook {
 		if ( !/^v\d+\.\d+\//.test(path) ) {
 			path = this.options('version') + '/' + path;
 		}
+
 		uri = `https://graph.${this.options('beta') ? 'beta.' : ''}facebook.com/${path}`;
+
+		if (this.options('graphDomain')) {
+			url = 'https://' + this.options('graphDomain') + '/' + path;
+		}
 
 		parsedUri = URL.parse(uri);
 		delete parsedUri.search;
